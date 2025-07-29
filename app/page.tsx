@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center space-y-8">
             <div className="space-y-4">
-              <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200">インターネットサービス企業</Badge>
+              <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-200">インターネットでビジネス支援</Badge>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 デジタルで繋がる
                 <br />
@@ -63,7 +63,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                ヤギ合同会社は、送客支援、Web制作、インターネットサービスの企画・開発を通じて、
+                送客支援、Web制作、インターネットサービスの企画・開発を通じて、
                 お客様のビジネス成長をサポートします。
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-center">
-                  コンテンツマーケティングとアフィリエイトを駆使して、潜在顧客を効果的に送客・紹介
+                  コンテンツマーケティングやアフィリエイトにより、潜在顧客を効果的に送客
                 </p>
               </CardContent>
             </Card>
@@ -148,7 +148,7 @@ export default function HomePage() {
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">送客支援</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  企業や商品の魅力を最大限に引き出し、コンテンツマーケティングやアフィリエイトを駆使して潜在顧客を送客・紹介いたします。
+                  企業や商品の魅力を最大限に引き出し、コンテンツマーケティングやアフィリエイトを駆使して潜在顧客を送客いたします。
                   データ分析に基づいた戦略的なアプローチで、質の高いリードを獲得します。
                 </p>
                 <ul className="space-y-3">
@@ -249,22 +249,21 @@ export default function HomePage() {
       <section id="case-study" className="py-20 bg-gradient-to-r from-blue-50 to-green-50">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">導入事例</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">お客様の成功事例をご紹介します。</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">事例紹介</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">お客様の事例をご紹介します。</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-xl transition-shadow">
               <CardHeader className="text-center pb-4">
                 <Badge className="bg-blue-100 text-blue-700 w-fit mx-auto mb-4">送客支援事例</Badge>
-                <CardTitle className="text-xl text-gray-800">K会計事務所様</CardTitle>
+                <CardTitle className="text-xl text-gray-800">K会計事務所様（東京都）</CardTitle>
                 <CardDescription className="text-gray-600">個人事業主の節税に強みを持つ会計事務所</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞
-                  税理士報酬」となる方限定のサービスを全国展開。
-                  弊社では、そんな大きな強みを持つ会計事務所の送客支援をさせていただいており、今後はコンテンツマーケティングを駆使し、より多くの個人事業主の方にリーチしていく予定です。
+                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞ 税理士報酬」となる方限定のサービスを全国展開。
+                  弊社では、エンドユーザーの利益になる情報を前面に押し出すコンテンツを制作・展開することにより、質の高いリードへのリーチと送客をサポートさせていただいております。
                 </p>
               </CardContent>
             </Card>
