@@ -63,7 +63,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                ヤギ合同会社は、送客・紹介サービス、Web制作、インターネットサービスの企画・開発を通じて、
+                ヤギ合同会社は、送客支援、Web制作、インターネットサービスの企画・開発を通じて、
                 お客様のビジネス成長をサポートします。
               </p>
             </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-gray-800">送客・紹介サービス</CardTitle>
+                <CardTitle className="text-xl text-gray-800">送客支援</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-center">
@@ -145,7 +145,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
                   <Target className="h-8 w-8 text-blue-500" />
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">送客・紹介サービス</h3>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">送客支援</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   企業や商品の魅力を最大限に引き出し、コンテンツマーケティングやアフィリエイトを駆使して潜在顧客を送客・紹介いたします。
@@ -334,7 +334,7 @@ export default function HomePage() {
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">事業内容</h4>
                   <ul className="text-gray-600 space-y-1">
-                    <li>• 送客・紹介サービス</li>
+                    <li>• 送客支援</li>
                     <li>• Web制作</li>
                     <li>• インターネットサービスの企画・開発</li>
                   </ul>
@@ -432,7 +432,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    送客・紹介サービス
+                    送客支援
                   </Link>
                 </li>
                 <li>
