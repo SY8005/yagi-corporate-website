@@ -27,10 +27,123 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
         <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-green-400 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">Y</span>
+            <div className="flex items-center space-x-2">
+              {/* ロゴ候補1: シンプルなグラデーション */}
+              <div className="flex items-center space-x-4 p-2 bg-gray-50 rounded-lg">
+                <div className="text-center">
+                  <svg width="80" height="24" viewBox="0 0 80 24" className="mb-1">
+                    <defs>
+                      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#60a5fa" />
+                        <stop offset="100%" stopColor="#4ade80" />
+                      </linearGradient>
+                    </defs>
+                    <text
+                      x="40"
+                      y="18"
+                      textAnchor="middle"
+                      fill="url(#gradient1)"
+                      fontSize="20"
+                      fontWeight="900"
+                      fontFamily="Arial, sans-serif"
+                      letterSpacing="2px"
+                    >
+                      YAGI
+                    </text>
+                  </svg>
+                  <p className="text-xs text-gray-500">候補1</p>
+                </div>
+
+                {/* ロゴ候補2: Lot風の幾何学的デザイン */}
+                <div className="text-center">
+                  <svg width="80" height="24" viewBox="0 0 80 24" className="mb-1">
+                    <defs>
+                      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#3b82f6" />
+                        <stop offset="100%" stopColor="#10b981" />
+                      </linearGradient>
+                    </defs>
+                    {/* Y */}
+                    <polygon points="2,2 8,2 11,8 14,2 20,2 15,12 15,20 9,20 9,12" fill="url(#gradient2)" />
+                    {/* A */}
+                    <polygon points="22,20 22,2 28,2 32,20 29,20 28.5,17 25.5,17 25,20" fill="url(#gradient2)" />
+                    <rect x="26" y="12" width="2" height="3" fill="white" />
+                    {/* G */}
+                    <path
+                      d="M34,2 L44,2 L44,6 L38,6 L38,10 L42,10 L42,14 L38,14 L38,18 L44,18 L44,22 L34,22 Z"
+                      fill="url(#gradient2)"
+                    />
+                    <rect x="40" y="10" width="4" height="4" fill="url(#gradient2)" />
+                    {/* I */}
+                    <rect x="48" y="2" width="6" height="4" fill="url(#gradient2)" />
+                    <rect x="50" y="6" width="2" height="12" fill="url(#gradient2)" />
+                    <rect x="48" y="18" width="6" height="4" fill="url(#gradient2)" />
+                  </svg>
+                  <p className="text-xs text-gray-500">候補2</p>
+                </div>
+
+                {/* ロゴ候補3: 角丸の幾何学的デザイン */}
+                <div className="text-center">
+                  <svg width="80" height="24" viewBox="0 0 80 24" className="mb-1">
+                    <defs>
+                      <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#1d4ed8" />
+                        <stop offset="100%" stopColor="#059669" />
+                      </linearGradient>
+                    </defs>
+                    {/* Y */}
+                    <path
+                      d="M2,2 L8,2 Q9,2 9,3 L11,8 L13,3 Q13,2 14,2 L20,2 Q21,2 21,3 L16,12 L16,19 Q16,20 15,20 L9,20 Q8,20 8,19 L8,12 Q8,11 9,12 Z"
+                      fill="url(#gradient3)"
+                    />
+                    {/* A */}
+                    <path
+                      d="M22,20 Q21,20 21,19 L21,3 Q21,2 22,2 L28,2 Q29,2 29,3 L32,19 Q32,20 31,20 L29,20 L28.5,17 L25.5,17 L25,20 Z M26,12 L28,12 L27,8 Z"
+                      fill="url(#gradient3)"
+                    />
+                    {/* G */}
+                    <path
+                      d="M34,2 L44,2 Q45,2 45,3 L45,5 Q45,6 44,6 L38,6 L38,10 L42,10 Q43,10 43,11 L43,13 Q43,14 42,14 L38,14 L38,18 L44,18 Q45,18 45,19 L45,21 Q45,22 44,22 L34,22 Q33,22 33,21 L33,3 Q33,2 34,2 Z M40,10 L44,10 L44,14 L40,14 Z"
+                      fill="url(#gradient3)"
+                    />
+                    {/* I */}
+                    <path
+                      d="M48,2 L54,2 Q55,2 55,3 L55,5 Q55,6 54,6 L52,6 L52,18 L54,18 Q55,18 55,19 L55,21 Q55,22 54,22 L48,22 Q47,22 47,21 L47,19 Q47,18 48,18 L50,18 L50,6 L48,6 Q47,6 47,5 L47,3 Q47,2 48,2 Z"
+                      fill="url(#gradient3)"
+                    />
+                  </svg>
+                  <p className="text-xs text-gray-500">候補3</p>
+                </div>
+
+                {/* ロゴ候補4: ボックス型デザイン */}
+                <div className="text-center">
+                  <div className="flex space-x-1 mb-1">
+                    <div className="w-4 h-6 bg-gradient-to-b from-blue-400 to-green-400 rounded-sm flex items-center justify-center">
+                      <span className="text-white text-xs font-black">Y</span>
+                    </div>
+                    <div className="w-4 h-6 bg-gradient-to-b from-blue-500 to-green-500 rounded-sm flex items-center justify-center">
+                      <span className="text-white text-xs font-black">A</span>
+                    </div>
+                    <div className="w-4 h-6 bg-gradient-to-b from-blue-600 to-green-600 rounded-sm flex items-center justify-center">
+                      <span className="text-white text-xs font-black">G</span>
+                    </div>
+                    <div className="w-4 h-6 bg-gradient-to-b from-blue-700 to-green-700 rounded-sm flex items-center justify-center">
+                      <span className="text-white text-xs font-black">I</span>
+                    </div>
+                  </div>
+                  <p className="text-xs text-gray-500">候補4</p>
+                </div>
+
+                {/* ロゴ候補5: 現在のスタイルを踏襲 */}
+                <div className="text-center">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-green-400 rounded-lg flex items-center justify-center mb-1">
+                    <span className="text-white font-bold text-sm">Y</span>
+                  </div>
+                  <p className="text-xs text-gray-500">候補5</p>
+                </div>
+              </div>
+              <span className="font-bold text-xl text-gray-800">ヤギ合同会社</span>
             </div>
-            <span className="font-bold text-xl text-gray-800">ヤギ合同会社</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -63,8 +176,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                送客支援、Web制作、インターネットサービスの企画・開発を通じて、
-                お客様のビジネス成長をサポートします。
+                送客支援、Web制作、インターネットサービスの企画・開発を通じて、 お客様のビジネス成長をサポートします。
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -262,7 +374,8 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞ 税理士報酬」となる方限定のサービスを全国展開。
+                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞
+                  税理士報酬」となる方限定のサービスを全国展開。
                   弊社では、エンドユーザーの利益になる情報を前面に押し出すコンテンツを制作・展開することにより、質の高いリードへのリーチと送客をサポートいたします。
                 </p>
               </CardContent>
