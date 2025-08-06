@@ -16,7 +16,7 @@ export default function HomePage() {
             <img 
               src="/logo.png" 
               alt="ヤギ合同会社"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
