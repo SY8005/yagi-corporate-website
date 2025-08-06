@@ -2,21 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  Users,
-  Globe,
-  Lightbulb,
-  ArrowRight,
-  MapPin,
-  Mail,
-  Twitter,
-  Facebook,
-  Instagram,
-  CheckCircle,
-  Target,
-  Palette,
-  Code,
-} from "lucide-react"
+import { Users, Globe, Lightbulb, ArrowRight, MapPin, Mail, Twitter, Facebook, Instagram, CheckCircle, Target, Palette, Code } from 'lucide-react'
 import Link from "next/link"
 import { ContactForm } from "@/components/contact-form"
 
@@ -26,43 +12,15 @@ export default function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
         <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            {/* Lotフォント風カスタムSVGロゴ */}
-            <svg width="120" height="32" viewBox="0 0 120 32" className="flex-shrink-0">
-              <defs>
-                <linearGradient id="yagiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#60a5fa" />
-                  <stop offset="100%" stopColor="#4ade80" />
-                </linearGradient>
-              </defs>
-
-              {/* Y - 三角形ベースの幾何学的デザイン */}
-              <g fill="url(#yagiGradient)">
-                <polygon points="4,4 12,4 16,14 20,4 28,4 22,18 22,28 14,28 14,18" />
-              </g>
-
-              {/* A - 三角形と横線の幾何学的デザイン */}
-              <g fill="url(#yagiGradient)">
-                <polygon points="32,28 32,4 40,4 48,28 44,28 43,24 37,24 36,28" />
-                <rect x="38" y="18" width="4" height="3" fill="white" />
-              </g>
-
-              {/* G - 角ばった幾何学的デザイン */}
-              <g fill="url(#yagiGradient)">
-                <rect x="52" y="4" width="20" height="4" />
-                <rect x="52" y="4" width="4" height="24" />
-                <rect x="52" y="24" width="20" height="4" />
-                <rect x="68" y="16" width="4" height="12" />
-                <rect x="64" y="16" width="8" height="4" />
-              </g>
-
-              {/* I - シンプルな幾何学的デザイン */}
-              <g fill="url(#yagiGradient)">
-                <rect x="76" y="4" width="12" height="4" />
-                <rect x="80" y="8" width="4" height="16" />
-                <rect x="76" y="24" width="12" height="4" />
-              </g>
-            </svg>
+          <div className="flex items-center space-x-3">
+            {/* 新しいロゴ - 左側のアイコン部分のみ表示 */}
+            <div className="w-10 h-10 overflow-hidden rounded-lg">
+              <img 
+                src="/logo.jpg" 
+                alt="ヤギ合同会社"
+                className="w-20 h-10 object-cover object-left"
+              />
+            </div>
             <span className="font-bold text-xl text-gray-800">ヤギ合同会社</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
@@ -96,7 +54,8 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                送客支援、Web制作、インターネットサービスの企画・開発を通じて、 お客様のビジネス成長をサポートします。
+                送客支援、Web制作、インターネットサービスの企画・開発を通じて、
+                お客様のビジネス成長をサポートします。
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -294,8 +253,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞
-                  税理士報酬」となる方限定のサービスを全国展開。
+                  「お客様に資金増加のメリットを最大限とってもらう」をコンセプトに、「節税効果 ＞ 税理士報酬」となる方限定のサービスを全国展開。
                   弊社では、エンドユーザーの利益になる情報を前面に押し出すコンテンツを制作・展開することにより、質の高いリードへのリーチと送客をサポートいたします。
                 </p>
               </CardContent>
@@ -446,9 +404,14 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-green-400 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">Y</span>
+              <div className="flex items-center space-x-3 mb-4">
+                {/* フッターでも新しいロゴを使用 */}
+                <div className="w-8 h-8 overflow-hidden rounded-lg">
+                  <img 
+                    src="/logo.jpg" 
+                    alt="ヤギ合同会社"
+                    className="w-16 h-8 object-cover object-left"
+                  />
                 </div>
                 <span className="font-bold text-xl">ヤギ合同会社</span>
               </div>
