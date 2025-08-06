@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
-        <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between bg-white">
+        <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-center md:justify-between bg-white">
           <div className="flex items-center space-x-2">
             <img 
               src="/logo.png" 
