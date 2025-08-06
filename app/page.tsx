@@ -55,12 +55,16 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3">
-                サービスを見る
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3" asChild>
+                <Link href="#services">
+                  サービスを見る
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8 py-3 bg-transparent">
-                お問い合わせ
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8 py-3 bg-transparent" asChild>
+                <Link href="#contact">
+                  お問い合わせ
+                </Link>
               </Button>
             </div>
           </div>
@@ -132,7 +136,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
                   <Target className="h-8 w-8 text-blue-500" />
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">送客支援</h3>
+                  <h3 id="referral-support" className="text-2xl lg:text-3xl font-bold text-gray-800">送客支援</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   企業や商品の魅力を最大限に引き出し、コンテンツマーケティングやアフィリエイトを駆使して潜在顧客を送客いたします。
@@ -172,7 +176,7 @@ export default function HomePage() {
               <div className="space-y-6 order-1 lg:order-2">
                 <div className="flex items-center space-x-3">
                   <Globe className="h-8 w-8 text-green-500" />
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">Web制作</h3>
+                  <h3 id="web-development" className="text-2xl lg:text-3xl font-bold text-gray-800">Web制作</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   お客様のビジネス目標に合わせた、美しく機能的なWebサイトを制作いたします。
@@ -200,7 +204,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
                   <Code className="h-8 w-8 text-purple-500" />
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-800">サービス企画・開発</h3>
+                  <h3 id="service-planning" className="text-2xl lg:text-3xl font-bold text-gray-800">サービス企画・開発</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   革新的なインターネットサービスの企画から開発まで、一貫してサポートいたします。
@@ -414,17 +418,17 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">サービス</h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="#referral-support" className="hover:text-white transition-colors">
                     送客支援
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="#web-development" className="hover:text-white transition-colors">
                     Web制作
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="#service-planning" className="hover:text-white transition-colors">
                     サービス企画・開発
                   </Link>
                 </li>
