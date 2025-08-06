@@ -448,13 +448,11 @@ export default function HomePage() {
                     お問い合わせ
                   </Link>
                 </li>
-                <!--
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
                     プライバシーポリシー
                   </Link>
                 </li>
-                -->
               </ul>
             </div>
           </div>
