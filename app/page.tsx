@@ -12,16 +12,12 @@ export default function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
         <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            {/* 新しいロゴ - 左側のアイコン部分のみ表示 */}
-            <div className="w-10 h-10 overflow-hidden rounded-lg">
-              <img 
-                src="/logo.jpg" 
-                alt="ヤギ合同会社"
-                className="w-20 h-10 object-cover object-left"
-              />
-            </div>
-            <span className="font-bold text-xl text-gray-800">ヤギ合同会社</span>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/logo.png" 
+              alt="ヤギ合同会社"
+              className="h-12 w-auto"
+            />
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -339,7 +335,7 @@ export default function HomePage() {
               <CardContent>
                 <div className="bg-gray-100 rounded-lg overflow-hidden h-64">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0267842842847!2d139.69847831525395!3d35.66192998019625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca8b8b7b5b5%3A0x7c5b9b8b8b8b8b8b!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yR77yR4oiS77yU!5e0!3m2!1sja!2sjp!4v1640995200000!5m2!1sja!2sjp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0267842842847!2d139.69847831525395!3d35.66192998019625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca8b8b7b5b5%3A0x7c5b9b8b8b8b8b8b!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yR77yR4oiS77yU!5e0!3m2!1sja!2sjp!4v1640995200000!5m2!1sja!2sjp!4v1640995200000!5m2!1sja!2sjp"
                     width="100%"
                     height="256"
                     style={{ border: 0 }}
@@ -404,15 +400,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
-                {/* フッターでも新しいロゴを使用 */}
-                <div className="w-8 h-8 overflow-hidden rounded-lg">
-                  <img 
-                    src="/logo.jpg" 
-                    alt="ヤギ合同会社"
-                    className="w-16 h-8 object-cover object-left"
-                  />
-                </div>
+              <div className="mb-4">
                 <span className="font-bold text-xl">ヤギ合同会社</span>
               </div>
               <p className="text-gray-300 text-sm">
