@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: 'ヤギ合同会社 - 送客支援・Web制作・サービス開発',
   description: 'Created with v0',
   generator: 'v0.dev',
 }
