@@ -53,7 +53,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
 
     // メール送信
     await resend.emails.send({
-      from: "info@yagi-llc.com", // 管理者宛てメールの from アドレスを変更
+      from: "contact@resend.dev", // noreply@resend.dev から変更
       to: contactEmail,
       subject: `【ヤギ合同会社】お問い合わせ - ${name}様`,
       html: `
@@ -84,7 +84,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
 
     // 送信者への自動返信メール
     await resend.emails.send({
-      from: "info@yagi-llc.com", // 送信者への自動返信メールの from アドレスを変更
+      from: "contact@resend.dev", // noreply@resend.dev から変更
       to: email,
       subject: "【ヤギ合同会社】お問い合わせを受け付けました",
       html: `
