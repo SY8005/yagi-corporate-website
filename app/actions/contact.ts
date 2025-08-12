@@ -110,8 +110,8 @@ export async function submitContactForm(prevState: any, formData: FormData) {
 
           <div style="background-color: #ecfdf5; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="color: #059669; margin-top: 0;">今後の流れ</h3>
-            <p>お問い合わせ内容を確認の上、2営業日以内にご返信させていただきます。</p>
-            <p>お急ぎの場合は、お電話でのお問い合わせも承っております。</p>
+            <p>お問い合わせの内容は、順次確認させていただきます。<br>ご返信させていただく場合、返信までにお時間を頂戴することがございます。<br>あらかじめご了承ください。</p>
+            <p>※ご意見・情報のご提供のみの内容に関しましては、このメールにて受付とさせていただき、弊社サービスの向上に役立たせていただきます。</p>
           </div>
 
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
